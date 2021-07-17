@@ -1,6 +1,7 @@
 const criaElementH1 = document.createElement('h1');
 criaElementH1.innerText = 'Exercício 5.2 - JavaScript DOM';
 document.body.appendChild(criaElementH1);
+criaElementH1.className = 'title';
 
 
 const criaMain = document.createElement('main');
@@ -23,3 +24,15 @@ const elementImg = document.createElement('img');
 elementImg.className = 'small-image';
 elementImg.src = 'https://www.amigododesigner.com.br/wp-content/uploads/2018/07/post-12-Como-n%C3%A3o-ter-problemas-com-direitos-autorais-em-suas-artes-01-380x250.png';
 criaSeccao2.appendChild(elementImg);
+
+
+
+
+
+
+for (let index = 1; index <= 3; index += 1) {
+  const arrayShows = ['','Ivete Sangalo', 'Charlie Brown', 'Capital Inicial']
+  const elementH3 = document.createElement('h3');
+  elementH3.innerHTML = index + "  " + 'Banda Favorita: ' + arrayShows[index];
+  criaMain.appendChild(elementH3);
+}
